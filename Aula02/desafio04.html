@@ -17,21 +17,22 @@
     <h1>MANIPULANDO IMAGENS DO HTML ATRAVÉS DO JS</h1>
     <hr>
     <div>
-        <img src="img/doberman.jpg" alt="Doberman">
+        <img src="img/doberman.jpg" alt="Doberman" title="doberman">
     </div>
     <button onclick="trocar_img()">TROCAR A IMAGEM</button>
 
     <script>
+
         function trocar_img() {
             const tags_src = document.getElementsByTagName("img")
             console.log(tags_src)
             let tags_src_1 = tags_src[0]
             console.log(tags_src_1)
-            tags_src_1.src = "img/doberman_apaixonado.jpg"
+            if (tag_i_1.title == "Doberman") {
+                tag_i_1.src = "img/oberman.jpg"
+                tags_src_1.src = "img/doberman_apaixonado.jpg"
+            }
         }
-
-
-
 
     </script>
 
